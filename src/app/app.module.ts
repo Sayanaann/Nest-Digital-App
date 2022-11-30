@@ -19,6 +19,8 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { Navbar3Component } from './navbar3/navbar3.component';
 import { ViewallfriendsComponent } from './viewallfriends/viewallfriends.component';
+import { EmployeeregComponent } from './employeereg/employeereg.component';
+
 
 
 const myRoute:Routes=[
@@ -61,7 +63,12 @@ const myRoute:Routes=[
   {
     path :"viewallfriends",
     component : ViewallfriendsComponent
+  },
+  {
+    path :"empreg",
+    component : EmployeeregComponent
   }
+
 
 ]
 
@@ -80,7 +87,9 @@ const myRoute:Routes=[
     AdminloginComponent,
     ViewallcoursesComponent,
     Navbar3Component,
-    ViewallfriendsComponent
+    ViewallfriendsComponent,
+    EmployeeregComponent,
+   
   ],
   imports: [
     BrowserModule,
