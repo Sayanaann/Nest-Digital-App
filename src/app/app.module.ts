@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 const myRoute:Routes=[
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path :"gallery",
     component : GalleryComponent
+  },
+  {
+    path :"contactus",
+    component : ContactusComponent
   }
 ]
 
@@ -25,7 +30,8 @@ const myRoute:Routes=[
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
