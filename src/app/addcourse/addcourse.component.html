@@ -1,0 +1,39 @@
+<app-navbar2></app-navbar2>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Title</label>
+        <input name ="courseTitle" [(ngModel)] ="courseTitle" type="text" class="form-control">
+    
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Description</label>
+        <textarea name ="courseDescription" [(ngModel)] ="courseDescription" id="" cols="30" rows="10" class="form-control"></textarea>
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Duration</label>
+        <input  name ="courseDuration" [(ngModel)] ="courseDuration" type="text" class="form-control">
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Date</label>
+        <input  name ="courseDate" [(ngModel)] ="courseDate" type="date" class="form-control">
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Venue</label>
+        <input  name ="courseVenue" [(ngModel)] ="courseVenue" type="text" class="form-control">
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label"></label>
+        <button (click)= "readvalue()" class="btn btn-success">Submit</button>
+
+    </div>
+    
+</div>
+
+        </div>
+    </div>
+</div>
+

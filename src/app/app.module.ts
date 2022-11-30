@@ -11,6 +11,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { EmployeLoginComponent } from './employe-login/employe-login.component';
 import { FormsModule } from '@angular/forms';
+import { AddcourseComponent } from './addcourse/addcourse.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 const myRoute:Routes=[
@@ -33,6 +36,10 @@ const myRoute:Routes=[
   {
     path :"aboutus",
     component : AboutUsComponent
+  },
+  {
+    path :"addcourses",
+    component : AddcourseComponent
   }
 ]
 
@@ -44,13 +51,17 @@ const myRoute:Routes=[
     GalleryComponent,
     ContactusComponent,
     AboutUsComponent,
-    EmployeLoginComponent
+    EmployeLoginComponent,
+    AddcourseComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
