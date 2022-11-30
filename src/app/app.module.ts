@@ -9,12 +9,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { EmployeLoginComponent } from './employe-login/employe-login.component';
+import { FormsModule } from '@angular/forms';
 
 
 const myRoute:Routes=[
   {
     path :"",
     component : HomeComponent
+  },
+  {
+    path :"employee login",
+    component : EmployeLoginComponent
   },
   {
     path :"gallery",
@@ -37,12 +43,14 @@ const myRoute:Routes=[
     NavbarComponent,
     GalleryComponent,
     ContactusComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    EmployeLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
