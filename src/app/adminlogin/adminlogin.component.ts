@@ -21,7 +21,7 @@ let data : any ={  "username": this.username,
    
   if (this.username=="admin"&& this.password=="nestdigital") {
      alert("valid login")
-     this.route.navigate(['/addcourses'])
+     this.route.navigate(['/viewallcourses'])
     alert("valid login")
     
   } else {
