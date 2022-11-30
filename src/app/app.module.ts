@@ -18,6 +18,7 @@ import { AddfriendComponent } from './addfriend/addfriend.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
 import { Navbar3Component } from './navbar3/navbar3.component';
+import { ViewallfriendsComponent } from './viewallfriends/viewallfriends.component';
 
 
 const myRoute:Routes=[
@@ -56,7 +57,12 @@ const myRoute:Routes=[
   {
     path :"viewallcourses",
     component : ViewallcoursesComponent
+  },
+  {
+    path :"viewallfriends",
+    component : ViewallfriendsComponent
   }
+
 ]
 
 @NgModule({
@@ -73,7 +79,8 @@ const myRoute:Routes=[
     AddfriendComponent,
     AdminloginComponent,
     ViewallcoursesComponent,
-    Navbar3Component
+    Navbar3Component,
+    ViewallfriendsComponent
   ],
   imports: [
     BrowserModule,
