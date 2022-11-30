@@ -16,6 +16,8 @@ import { Navbar2Component } from './navbar2/navbar2.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AddfriendComponent } from './addfriend/addfriend.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { ViewallcoursesComponent } from './viewallcourses/viewallcourses.component';
+import { Navbar3Component } from './navbar3/navbar3.component';
 
 
 const myRoute:Routes=[
@@ -50,6 +52,10 @@ const myRoute:Routes=[
   {
     path :"adminlogin",
     component : AdminloginComponent
+  },
+  {
+    path :"viewallcourses",
+    component : ViewallcoursesComponent
   }
 ]
 
@@ -65,7 +71,9 @@ const myRoute:Routes=[
     AddcourseComponent,
     Navbar2Component,
     AddfriendComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    ViewallcoursesComponent,
+    Navbar3Component
   ],
   imports: [
     BrowserModule,
