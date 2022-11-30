@@ -6,12 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 const myRoute:Routes=[
   {
     path :"",
     component : HomeComponent
+  },
+  {
+    path :"gallery",
+    component : GalleryComponent
   }
 ]
 
@@ -19,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
